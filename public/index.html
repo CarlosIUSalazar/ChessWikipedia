@@ -27,7 +27,16 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+     <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+     <script>bubbly({
+       colorStart: '#FFF456',
+       colorStop: '#00ffff',
+       bubbleFunc:() => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+     });</script>
+
     <center>
     <div id="root"></div>
     <iframe src="https://fritz.chessbase.com?fen=r1brnbk1/1p1n1ppp/p2p4/q1pPpPPP/4P1Q1/2N1BN2/PPP1B3/1K4RR w - - 0 1" style="width:760px;height:480px"></iframe>
